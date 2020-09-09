@@ -20,11 +20,12 @@ public class Main {
         System.out.println(myString2);
         System.out.println(myString3);
         //Success! Now on to the methods.
-        myString1.charAt(13);
+        myString1.charAt(1);
         myString2.compareTo(myString1);
         myString3.equals(myString2);
         //I have no idea what any of those commands did but I finished with exit code 0!
-       
+        System.out.println(myString1.charAt(1));
+
 
 
 
