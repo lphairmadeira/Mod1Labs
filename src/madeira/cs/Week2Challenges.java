@@ -16,6 +16,17 @@ public class Week2Challenges {
     System.out.print("hello \n" + "world");
 
   //Challenge Problem 3
+System system1 = null;
+system1.out.print ("\nI am 15 years old");
 
-
+//Challenge Problem 4
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter your first name");
+    String name = s.nextLine();
+    String greeting = "Hi " + name;
+    System.out.println(greeting);
+    System.out.println("Enter your last name");
+    String name2 = s.nextLine();
+    String greeting2 = "Hi" + name + name2;
+    System.out.println(greeting2);
 }}
