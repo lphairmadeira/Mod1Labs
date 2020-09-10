@@ -1,8 +1,11 @@
 package madeira.cs;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        // LAB 1
         // Here is my first string!
         String myString1 = "This is my first string";
         System.out.println(myString1);
@@ -25,6 +28,7 @@ public class Main {
         myString3.equals(myString2);
         //I have no idea what any of those commands did but I finished with exit code 0!
         System.out.println(myString1.charAt(1));
+
 
 
 
