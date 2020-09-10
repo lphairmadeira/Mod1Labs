@@ -2,7 +2,7 @@ package madeira.cs;
 
 import java.util.Scanner;
 
-public class Main {
+public class Lab1 {
 
     public static void main(String[] args) {
         // LAB 1
