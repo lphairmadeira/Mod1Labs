@@ -3,7 +3,18 @@ package madeira.cs;
 import java.util.Scanner;
 
 public class Lab1 {
+    /*
+        Comments
+        =======
+        Lindsay -
+        Excellent work. Well organized & commented code.
+        The only change I'd like you to make is to print the result of the methods you use.
+        Printing is useful to demonstrate the output of the methods you used.
+        ========
 
+
+        Grade: A, 9.5/10
+     */
     public static void main(String[] args) {
         // LAB 1
         // Here is my first string!
