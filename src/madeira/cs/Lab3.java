@@ -64,5 +64,32 @@ int birthday = s.nextInt();
                 System.out.println("You are a Sagittarius or Capricorn" + "\nWinter" + "\n31");
 
 //Part 3
-System.out.println(365 * age + " days");
+Scanner z = new
+Scanner (System.in);
+System.out.println("Enter your age");
+int year = s.nextInt();
+        if (birthday == 1)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 2)
+            System.out.println(28 * 12 * year);
+        else if (birthday == 3)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 4)
+            System.out.println(30 * 12 * year);
+        else if (birthday == 5)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 6)
+            System.out.println(30 * 12 * year);
+        else if (birthday == 7)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 8)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 9)
+            System.out.println(30 * 12 * year);
+        else if (birthday == 10)
+            System.out.println(31 * 12 * year);
+        else if (birthday == 11)
+            System.out.println(30 * 12 * year);
+        else if (birthday == 12)
+            System.out.println(31 * 12 * year);
     }}
