@@ -1,6 +1,20 @@
 package madeira.cs;
 import java.util.Scanner;
 public class Lab3 {
+    /*
+
+        Grade and comments below
+        ------------------------
+        Lindsay - 
+        For the first part. The way you've constructed your if/else, 
+        it will print both of the print statements. That's incorrect.
+        For the second part, good work. Works well. For the last bit,
+        you've gotten close but the point was to compare the current date
+        to the date the user was born.
+
+        7.5/10
+
+    */
     public static void main(String[] arg) {
 
 /*  Write a program that does the following
