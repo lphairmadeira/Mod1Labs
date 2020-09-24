@@ -17,21 +17,21 @@ public class SuperLab {
             }
             myReader.close();
 
-            artistList[i] = new Artist();
 
             Artist [] artists1 = new Artist [numline];
             counter = 0;
             for (String line: artists) {
+                artists1[counter] = new Artist();
                 artists1 [counter].setName (line.split(",")[0]);
-                artists1 [counter].setAlbum (line.split(",")[0]);
-                artists1 [counter].setTwitter (line.split(",")[0]);
+                artists1 [counter].setAlbum (line.split(",")[1]);
+                artists1 [counter].setTwitter (line.split(",")[2]);
                 counter++; }
 
             Scanner s = new Scanner(System.in);
             for (Artist line: artists1) {
-                System.out.println("What do you think of" + artists1[0].getName() + "Enter a rating 1-10");
+                System.out.println("What do you think of " + artists1[0].getName() + "? Enter a rating 1-10");
                 int rating = s.nextInt();
-                System.out.println("The artist" + artists1[0].getName() + "released their album" + artists1[0].getAlbum() + "\n Their twitter handle is" + artists1[0].getTwitter() + "They received a rating of" + rating);
+                System.out.println("The artist " + artists1[0].getName() + " released their album" + artists1[0].getAlbum() + "\nTheir twitter handle is" + artists1[0].getTwitter() + " They received a rating of " + rating);
                 counter++; }
         }
 
