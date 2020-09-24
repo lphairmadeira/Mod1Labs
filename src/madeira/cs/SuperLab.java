@@ -17,17 +17,24 @@ public class SuperLab {
             }
             myReader.close();
 
+
             Artist [] artists1 = new Artist [numline];
             counter = 0;
             for (String line: artists) {
+                artistList[i] = new Artist();
                 artists1 [counter].setName (line.split(",")[0]);
                 artists1 [counter].setAlbum (line.split(",")[0]);
-                /*
-                line.split(",")[0];
-                line.split(",")[1];
-                line.split(",")[2];
-                 */
+                artists1 [counter].setTwitter (line.split(",")[0]);
                 counter++;
+            }
+
+            Scanner s = new Scanner(System.in);
+            for (Artist line: artists1) {
+                System.out.println("What do you think of" + artists1[0].getName() + "Enter a rating 1-10");
+                int rating = s.nextInt();
+                System.out.println("The artist" + artists1[0].getName() + "released their album" + artists1[0].getAlbum() + "\n Their twitter handle is" + artists1[0].getTwitter() + "They received a rating of" + rating);
+                counter++;
+
             }
 
 
@@ -38,13 +45,8 @@ public class SuperLab {
             System.out.println("An error occurred");
             e.printStackTrace();
         }
-/*
-"Billie Eilish", "Don't smile at me", "@BillieEilish"
-"EARTHGANG", "Shallow Graves for Toys", "@EarthGang"
-"Glass Animals", "Dreamland", "@GlassAnimals"
-"The Arctic Monkeys", "AM", "@ArcticMonkeys"
-"The Strokes", "The New Abnormal", "@thestrokes"
- */
+
+
 
     }
 }
@@ -60,10 +62,6 @@ public class SuperLab {
                 twitterHandle = "n/a";
                 rating = 0;
             }
-            Scanner s = new
-                    Scanner(System.in);
-            System.out.println("What do you think of" + name + "Enter a rating 1-10");
-            int rating = s.nextInt();
 
             public String getName() { return name; }
             public String getAlbum() { return album; }
@@ -75,5 +73,6 @@ public class SuperLab {
             public void setRating(int newRating) {rating = newRating;}
 
 
+            }
 
-        }
+
