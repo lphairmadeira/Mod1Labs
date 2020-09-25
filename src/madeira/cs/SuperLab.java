@@ -26,13 +26,17 @@ public class SuperLab {
                 artists1 [counter].setAlbum (line.split(",")[1]);
                 artists1 [counter].setTwitter (line.split(",")[2]);
                 counter++; }
+          /* for (Artist line: artists1) {
+            System.out.println(artists1);
+           counter++;} */
 
             Scanner s = new Scanner(System.in);
             for (Artist line: artists1) {
-                System.out.println("What do you think of " + artists1[0].getName() + "? Enter a rating 1-10");
+                System.out.println("What do you think of " + line.getName() + "? Enter a rating 1-10");
                 int rating = s.nextInt();
-                System.out.println("The artist " + artists1[0].getName() + " released their album" + artists1[0].getAlbum() + "\nTheir twitter handle is" + artists1[0].getTwitter() + " They received a rating of " + rating);
-                counter++; }
+                System.out.println("The artist " + line.getName() + " released their album" + line.getAlbum() + "\nTheir twitter handle is" + line.getTwitter() + " and they received a rating of " + rating);
+                counter++;
+            }
         }
 
         catch (FileNotFoundException e) {
@@ -53,7 +57,6 @@ public class SuperLab {
                 twitterHandle = "n/a";
                 rating = 0;
             }
-
             public String getName() { return name; }
             public String getAlbum() { return album; }
             public String getTwitter() {return twitterHandle; }
@@ -62,6 +65,7 @@ public class SuperLab {
             public void setAlbum(String newAlbum) {album = newAlbum;}
             public void setTwitter(String newTwitter) {twitterHandle = newTwitter;}
             public void setRating(int newRating) {rating = newRating;}
+
 }
 
 
