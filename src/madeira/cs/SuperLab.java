@@ -26,9 +26,6 @@ public class SuperLab {
                 artists1 [counter].setAlbum (line.split(",")[1]);
                 artists1 [counter].setTwitter (line.split(",")[2]);
                 counter++; }
-          /* for (Artist line: artists1) {
-            System.out.println(artists1);
-           counter++;} */
 
             Scanner s = new Scanner(System.in);
             for (Artist line: artists1) {
