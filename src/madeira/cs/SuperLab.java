@@ -4,8 +4,15 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class SuperLab {
     public static void main(String[] args) {
+        /*
+        Lindsay -
+         This is excellent work! Only small suggestion is to add comments.
+        Regardless, you should be proud of this...strong code!
+
+
+        */
         try {
-            File myObj = new File("/Users/lindsayphair/Downloads/artistList.txt");
+            File myObj = new File("C:\\Users\\Peter Wallace Local\\Downloads\\artistList.txt");
             Scanner myReader = new Scanner(myObj);
             int numline = myReader.nextInt();
             String temp = myReader.nextLine();
